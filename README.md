@@ -25,7 +25,7 @@ Try to maintain a uniform speed (60-70km/hr) (target speed in our case 60 km/ hr
 Follower Car:\
 Follow the Leader car. (do not go ahead/ lag too much)\
 Try to maintain the speed limits of 70km/hr.\
-Maintain a desirable distance from the leader Car. Here the desired distance is 20m.\
+Maintain a desirable distance from the leader Car. Here the desired distance is 20m.
 
 ***Installation***
 
@@ -155,10 +155,28 @@ Also install the torcs data-files by running
 ```
 sudo make datainstall
 ```
-If you made it this far, you can delete the TORCS_PATH variable by unset TORCS_PATH and are now ready to go. Congratulations :-)
+You can delete the TORCS_PATH variable by unset TORCS_PATH and are now ready to go.
+
+***Adding Cars at the Server end***
+
+```
+cd TORCS_PATH
+
+./torcs
+
+Race -> Quick Race -> Configure Race -> Select Track -> Accept -> scroll down non-selected box, you get scr_server2 -> click (De)Select 
+
+Second carbot is added into simulation and you could see it in the Selected box.
+```
 
 ***Datasets***
 
 Datasets for the PD controller is available at https://drive.google.com/drive/folders/15BYagJNtK3EZO5r9S2bE_TzIQ_pT777d?usp=sharing
+
+***Data Collection***
+
+Collecting data in servermode without running the GUI (for faster data collection)
+
+torcs -r ~/.torcs/config/raceman/quickrace.xml
 
 
