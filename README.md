@@ -32,13 +32,13 @@ This installation guide has been tested with Ubuntu 16.04 and 18.04
 Install torcs dependencies
 
 First we need to get some necessary debian packages
-'''
+```
 sudo apt-get install mesa-utils libalut-dev libvorbis-dev cmake libxrender-dev libxrender1 libxrandr-dev zlib1g-dev libpng16-dev
-'''
+```
 Now check for openGL/DRI by running
-'''
+```
 glxinfo | grep direct
-'''
+```
 The result should look like
 
 direct rendering: Yes
